@@ -31,6 +31,8 @@
 .contact-button .btn-warning {
     background: #e74c3c;
     border-color: #e74c3c;
+    font-family: PantonLight;
+    font-size: 16px;
 }
 .logo {
     height: 50px;
@@ -309,28 +311,94 @@ body {
 #left-block {
     padding-top: 30px;
 }
-#left-block .apply-course {
+#apply-course {
     height: 230px;
-    background: #f2f2f2;
-    
+}
+#apply-course h5, #author h5 {
+    font-size: 18px; 
+    font-family: PantonBlack;
+    color: #2FACE0;
 }
 .no-side-padding {
     padding-left: 0px;
     padding-right: 0px; 
 }
-#app-list {
-    margin-bottom: 60px;
+#app-list, #introduction {
+    margin-bottom: 40px;
 }
-#app-list h5 {
-    font-size: 16px;
+.app-box {
+    height: 80%;
+    overflow-y: scroll;
+}
+#app-list h5, #introduction h5 {
+    font-size: 18px;
     font-family: PantonBlack;
     color: #fff;
+    line-height: 30px;
+    margin-top: 0px;
+}
+#app-list span, #introduction span {
+    border-bottom: 2px solid #fff;
+}
+#apply-course span, #author span {
+    border-bottom: 2px solid #2FACE0;
+}
+#app-list .app-icon {
+    margin-bottom : 15px; 
+    padding: 0 10px;
+}
+#app-list .app-icon img {
+    width: 80%;
+}
+#app-list .app-icon h6 {
+    font-family: PantonLight;
+    font-size: 15px; 
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+}
+#apply-course .btn-primary { 
+background: #2FACE0;
+width: 100% ;
+font-family: PantonBlack;
+border-color: #2FACE0;
+}
+#apply-course p {
+    color: #919191;
+    font-family: PantonLight; 
+    font-size: 15px;
+    padding: 20px 0;
+    text-align: justify;
 }
 #center-block { 
 padding-top: 30px;  
 }
 #right-block {
-   padding-top: 50px;
+   padding-top: 30px;
+}
+#introduction .text-block p {
+    font-size: 14px; 
+    font-family: PantonLight;
+    color: #fff;
+    text-align: justify;
+}
+#introduction .btn-default {
+    background: #fff;
+    width:200px;
+    float: right;
+    font-family: PantonLight;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #2FACE0;
+    background-image: url(../img/download-icon.png);
+    background-position: 10px 50% ;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+#introduction .btn span {
+    border: none;
+    margin-left: 15px;
 }
 .showcase-footer {
     width: 100%;
@@ -338,4 +406,23 @@ padding-top: 30px;
     position: fixed;
     bottom: 0px;
     font-size: 10px;
+}
+
+.member-block img {
+    width: 55%;
+    border: 2px #f2f2f2 solid;
+    border-radius: 100%;
+}
+.member-block p {
+    font-size: 13px; 
+    font-family: PantonLight;
+    color:#919191;
+    margin-top: 5px;
+}
+.team-details {
+    color: #919191;
+    font-family: PantonLight; 
+    font-size: 15px;
+    padding: 10px 0;
+    text-align: justify;
 }
