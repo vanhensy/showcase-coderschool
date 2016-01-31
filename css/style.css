@@ -309,6 +309,13 @@ body {
 }
 #left-block {
     background: red;
+    padding-top: 50px;
+}
+#left-block .app-list, .apply-course {
+    height: 200px;
+    background: #f2f2f2;
+    margin-bottom: 25px;
+    
 }
 #center-block { 
 background: #000;
