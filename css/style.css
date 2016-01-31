@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'PantonLight';
+    src: url('../font/panton-light.otf');
+}
+@font-face {
+    font-family: 'PantonBlack';
+    src: url('../font/panton-black.ttf');
+}
+.navbar {
+    height: 70px;
+    background-color: #fff;
+}
+.menu li {
+    padding: 25px 20px;
+    font-size: 20px;
+    font-family: PantonLight;
+    line-height: 20px;
+}
+.menu .contact-button {
+    height: 70px;
+    margin: 0px;
+    padding: 15px;
+    width: auto;
+}
+.menu .contact-button .btn {
+    width: 200px;
+}
+.menu a {
+    padding: 0px!important;
+}
+.contact-button .btn-warning {
+    background: #e74c3c;
+    border-color: #e74c3c;
+}
+.logo {
+    height: 50px;
+}
+.bordered-box {
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.no-padding {
+    padding: 0;
+}
+.navbar-brand {
+    height: 70px;
+    padding: 12px 0;
+}
+.intro {
+    background-color: #e74c3c;
+    color: #fff;
+    min-height: 390px;
+    background-image: url('../img/bg_teaser.svg');
+    background-size: contain;
+}
+.intro .arrow {
+    height: 70px;
+    width: 70px;
+    background-image: url('../img/temp.png');
+    background-size: contain;
+    top: 420px;
+    position: absolute;
+    left: 50%;
+    margin-left: -35.5px;
+}
+.btn-large {
+    height: 36px;
+    line-height: 36px;
+}
+.main-body {
+    padding-top: 70px;
+}
+h1 {
+    font-family: "PantonBlack";
+    font-size: 27pt;
+    line-height: 30pt;
+    margin: 1rem 0 0rem 0;
+}
+h2 {
+    font-family: "PantonBlack";
+    font-size: 20pt;
+    line-height: 30pt;
+    margin: 0rem 0 1rem 0;
+    color: #e74c3c;
+}
+h3 {
+    font-family: "PantonLight";
+    font-size: 18pt;
+    margin: 1rem 0 0rem 0;
+    color: #e74c3c;
+}
+h4 {
+    font-family: "PantonLight";
+    font-size: 16pt;
+    margin: 1rem 0 0rem 0;
+}
+#principle p {
+    font-family: "PantonLight";
+    font-size: 13.4pt;
+    margin: 1rem 0 4rem 0;
+}
+#principle .principle-box p {
+    font-family: "PantonLight";
+    font-size: 12.5pt;
+    margin: 1rem 0 2rem 0;
+    color: #555;
+    width: 100%;
+}
+.seperator {
+    height: 10px;
+    background: url('../img/seperator.png') 0 50% no-repeat;
+    background-size: contain;
+}
+#courses-apply {
+    padding: 4rem 0;
+}
+.courses-box {
+    border: 1px solid #e74c3c;
+}
+.courses-box h3 {
+    font-family: "PantonBlack";
+    font-size: 20pt;
+    margin: 0rem 0 0rem 0;
+    color: #555;
+    border-bottom: 1px solid #e74c3c;
+    line-height: 25pt;
+}
+.courses-box h4 {
+    font-family: "PantonLight";
+    font-size: 14pt;
+    margin: 1rem 0 0.5rem 0;
+    color: #e74c3c;
+}
+.courses-box button {
+    width: 100%;
+}
+.courses-box img {
+    margin: 2rem 0 3rem 0;
+}
+#testinomial-carousel {
+    margin-top: 2rem;
+}
+.testinomial {
+    background-color: #e74c3c;
+    padding-bottom: 2rem;
+}
+.testinomial h2 {
+    color: #fff;
+    margin: 3rem 0 0.5rem 0;
+}
+.testinomial h4 {
+    font-size: 14pt
+}
+.testinomial img {
+    width: 70px;
+    margin-bottom: 170px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+.testinomial .carousel-indicators {
+    bottom: 0px;
+}
+.carousel-control.right,
+.carousel-control.left {
+    background: transparent;
+}
+.instructor {
+    background: url('../img/ruler.png') repeat-x;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+.instructor img {
+    border-radius: 3px;
+    border: 1px #D0D0D0 solid;
+    width: 100%;
+}
+.instructor h2 {
+    margin-bottom: 1.5em;
+}
+.instructor h3 {
+    margin: 0rem 0 0rem 0;
+}
+.instructor h5 {
+    font-family: "PantonLight";
+    color: #555;
+    font-size: 13pt;
+}
+.instructor p {
+    font-family: "PantonLight";
+    font-size: 12pt;
+    text-align: justify;
+}
+.about-instructor {
+    padding-left: 2rem;
+    padding-right: 0;
+}
+.about-instructor a {
+    color: #e74c3c;
+}
+.why-free {
+    background: url('../img/launch.png') 90% 100% no-repeat;
+    padding: 4.5rem 0;
+    min-height: 400px;
+}
+.why-free h2 {
+    margin-bottom: 2em;
+}
+.why-free-content p {
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "PantonLight";
+    color: #555;
+    font-size: 12pt;
+}
+.why-free-content strong {
+    color: #e74c3c;
+}
+.footer {
+    background-color: #e74c3c;
+    min-height: 200px;
+}
+.contact-holder {
+    height: 120px;
+    width: 120px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    margin-top: -50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+}
+.contact-button {
+    height: 100px;
+    width: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 10px;
+    background: url('../img/mail-icon.png') 50% 50%;
+}
+.social {
+    margin-top: 90px;
+    margin-left: 37.5%;
+}
+.social img {
+    height: 30px;
+}
+.footer h6 {
+    margin-top: 130px;
+    color: #fff;
+}
+@media screen and (max-width: 480px) {
+    .navbar-brand {
+        width: 100%;
+    }
+    .navbar-brand>img {
+        height: 50px;
+    }
+    .coding-man {
+        width: 110%
+    }
+    .principle-box img {
+        width: 100%;
+    }
+    .linkedin {
+        display: none;
+    }
+    .arrow {
+        display: none;
+    }
+    .intro h4 {
+        margin-bottom: 2rem;
+    }
+    .social {
+        margin-left: 0px;
+    }
+    .footer h6 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .why-free {
+        background: none;
+    }
+    .why-free h2 {
+        padding: 0px 20px;
+    }
+    .why-free-content {
+        padding: 25px;
+        text-align: justify;
+        padding-top: 0px;
+    }
+    .about-instructor {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .testinomial img {
+        margin-bottom: 290px;
+    }
+}
+
+/* Showcase CSS */
+
+body {
+    overflow-y: hidden;
+}
+#left-block {
+    background: red;
+}
+#center-block { 
+background: #000;
+}
+#right-block {
+    background: blue;
+}
+.showcase-footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
+    font-size: 10px;
+}
