@@ -429,3 +429,69 @@ padding-top: 30px;
 .text-block {
     padding-right: 15px;
 }
+
+.overlay {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  background: rgba(46, 204, 113, 0.8);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+a.close-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  background-color: #000;
+  cursor: pointer;
+}
+a.close-overlay.hidden {
+  display: none;
+}
+
+a.expand {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 30px;
+}
+
+/* ============================================================
+  EFFECT 1 - SLIDE IN BOTTOM
+============================================================ */
+#app-box .overlay {
+  top: 0;
+  left: 22.5%;
+  right: 0;
+  width: 55%;
+   height: 65%;
+border-radius: 15px;
+    opacity: 0;
+}
+#app-box .overlay a.expand {
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  margin: 0 auto -30px auto;
+}
+#app-box .img.hover .overlay {
+ opacity: 1;
+}
+
