@@ -348,14 +348,14 @@ body {
     padding: 0 10px;
 }
 #app-list .app-icon img {
-    width: 80%;
+    width: 65%;
 }
 #app-list .app-icon h6 {
     font-family: PantonLight;
     font-size: 15px; 
     color: #fff;
     text-align: center;
-    margin: 0px;
+    margin: 10px;
 }
 #apply-course .btn-primary { 
 background: #2FACE0;
@@ -388,7 +388,7 @@ padding-top: 30px;
     float: right;
     font-family: PantonLight;
     text-transform: uppercase;
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 12px;
     color: #2FACE0;
     background-image: url(../img/download-icon.png);
@@ -425,4 +425,7 @@ padding-top: 30px;
     font-size: 15px;
     padding: 10px 0;
     text-align: justify;
+}
+.text-block {
+    padding-right: 15px;
 }
