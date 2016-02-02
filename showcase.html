@@ -71,7 +71,7 @@
                 <ul class="nav navbar-nav navbar-right menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Showcase</a></li>
+                    <li><a class="active-menu" href="#">Showcase</a></li>
                     <li><a href="testinomials.html">Testimonials</a></li>
                     <li class="contact-button">
                         <button class="btn btn-small btn-warning">Contact Us </button>
@@ -89,20 +89,20 @@
                     <div id="app-box" class="app-box">
                         <div class="col-md-4 app-icon text-center">
                             <div class="img">
-                                <img src="../img/app-icon.png">
+                                <img src="../img/app-icon-teachme.png">
                                 <div class="overlay">
-                                <a href="#" class="expand"><img src="img/icon-launch.png"/></a>
+                                <a id="teachme" onclick="show_demo('Teachme')" class="expand"><img src="img/icon-launch.png"/></a>
                                 <a class="close-overlay hidden">x</a>
                             </div>
                             </div>
                             
-                            <h6>App Name</h6>
+                            <h6>TeachMe</h6>
                         </div>
                         <div class="col-md-4 app-icon text-center">
                             <div class="img">
                                 <img src="../img/app-icon.png">
                                 <div class="overlay">
-                                <a href="#" class="expand"><img src="img/icon-launch.png"/></a>
+                                <a onclick="show_demo('Teachme')" class="expand"><img src="img/icon-launch.png"/></a>
                                 <a class="close-overlay hidden">x</a>
                             </div>
                             </div>
@@ -112,7 +112,7 @@
                             <div class="img">
                                 <img src="../img/app-icon.png">
                                 <div class="overlay">
-                                <a href="#" class="expand"><img src="img/icon-launch.png"/></a>
+                                <a onclick="show_demo('Teachme')" class="expand"><img src="img/icon-launch.png"/></a>
                                 <a class="close-overlay hidden">x</a>
                             </div>
                             </div>
@@ -122,7 +122,7 @@
                             <div class="img">
                                 <img src="../img/app-icon.png">
                                 <div class="overlay">
-                                <a href="#" class="expand"><img src="img/icon-launch.png"/></a>
+                                <a onclick="show_demo('Teachme')" class="expand"><img src="img/icon-launch.png"/></a>
                                 <a class="close-overlay hidden">x</a>
                             </div>
                             </div>
@@ -132,7 +132,7 @@
                             <div class="img">
                                 <img src="../img/app-icon.png">
                                 <div class="overlay">
-                                <a href="#" class="expand"><img src="img/icon-launch.png"/></a>
+                                <a onclick="show_demo('Teachme')" class="expand"><img src="img/icon-launch.png"/></a>
                                 <a class="close-overlay hidden">x</a>
                             </div>
                             </div>
@@ -142,7 +142,7 @@
                             <div class="img">
                                 <img src="../img/app-icon.png">
                                 <div class="overlay">
-                                <a href="#" class="expand"><img src="img/icon-launch.png"/></a>
+                                <a onclick="show_demo('Teachme')" class="expand"><img src="img/icon-launch.png"/></a>
                                 <a class="close-overlay hidden">x</a>
                             </div>
                             </div>
@@ -152,7 +152,7 @@
                             <div class="img">
                                 <img src="../img/app-icon.png">
                                 <div class="overlay">
-                                <a href="#" class="expand"><img src="img/icon-launch.png"/></a>
+                                <a onclick="show_demo('Teachme')" class="expand"><img src="img/icon-launch.png"/></a>
                                 <a class="close-overlay hidden">x</a>
                             </div>
                             </div>
@@ -162,7 +162,7 @@
                             <div class="img">
                                 <img src="../img/app-icon.png">
                                 <div class="overlay">
-                                <a href="#" class="expand"><img src="img/icon-launch.png"/></a>
+                                <a onclick="show_demo('Teachme')" class="expand"><img src="img/icon-launch.png"/></a>
                                 <a class="close-overlay hidden">x</a>
                             </div>
                             </div>
@@ -172,7 +172,7 @@
                 </div>
                 <div id="apply-course" class="col-md-12">
                     <h5><span> Want to make one of this ?!</span></h5>
-                    <p>Coderschool is offering iOS class to each people how to ake their app and it's totally free. If you want to create an awesome app like this, please click in the link below for application.</p>
+                    <p>Coderschool is offering iOS class to each people how to make their app and it's totally free. If you want to create an awesome app like this, please click in the link below for application.</p>
                     <button class="btn btn-lagre btn-primary"> APPLY TO CODERSCHOOL</button>
                 </div>
             </div>
@@ -181,6 +181,9 @@
             <div id="center-block" class="col-md-4 no-side-padding">
                 <div class="iphone-wireframe text-center animated zoomIn">
                     <img src="img/wireframe.png" />
+                    <div id="gif_image" >
+                    
+                    </div>
                 </div>
             </div>
 
@@ -188,28 +191,28 @@
                 <div id="introduction" class="col-md-12">
                     <h5><span>Introduction</span></h5>
                     <div id="introduction-text" class="text-block">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p id="text-intro">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"</p>
-                         <button class="btn btn-default btn-small"><p style="color:#2FACE0;margin-left:45px;">Download</p></button>
+                         <a id="download-button" href="" target="_blank"><button  class="btn btn-default btn-small"><p style="color:#2FACE0;margin-left:45px;">Download</p></button></a>
                     </div>
                    
                 </div>
                 <div id="author" class="col-md-12">
                     <h5><span> About Author:</span></h5>
-                    <p class="team-details"> Team Name: Something goes here...</br>
+                    <p id="text-team" class="team-details"> Team Name: Something goes here...</br>
                         Class: 08/2015 - Graduated : 10/2015</p>
                     <div class="member-list row">
                         <div class="member-block col-md-4 no-side-padding text-center">
-                            <img src="/img/unknown-user.png" />
-                            <p>Member name</p>
+                            <img class="member-avatar" src="/img/unknown-user.png" />
+                            <p class="member-name">Member name</p>
                         </div>
                         <div class="member-block col-md-4 no-side-padding text-center">
-                            <img src="/img/unknown-user.png" />
-                            <p>Member name</p>
+                            <img class="member-avatar" src="/img/unknown-user.png" />
+                            <p class="member-name">Member name</p>
                         </div>
                         <div class="member-block col-md-4 no-side-padding text-center">
-                            <img src="/img/unknown-user.png" />
-                            <p>Member name</p>
+                            <img class="member-avatar" src="/img/unknown-user.png" />
+                            <p class="member-name">Member name</p>
                         </div>
                     </div>
                 </div>
@@ -226,6 +229,8 @@
     <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/modernizr.js"></script>
-    
     <script src="js/custom.js"></script>
+<script>
+
+</script>
 </body>

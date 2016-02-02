@@ -347,9 +347,11 @@ h4 {
 #app-list .app-icon {
     margin-bottom: 15px;
     padding: 0 10px;
+   
 }
 #app-list .app-icon img {
     width: 65%;
+     cursor: pointer;
 }
 #app-list .app-icon h6 {
     font-family: PantonLight;
@@ -412,7 +414,7 @@ h4 {
 }
 .member-block img {
     width: 55%;
-    border: 2px #f2f2f2 solid;
+    border: 2px #bdc3c7 solid;
     border-radius: 100%;
 }
 .member-block p {
@@ -520,4 +522,21 @@ a.expand {
     padding: 15px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
+}
+
+#gif_image{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+}
+
+#gif_image img {
+    width: 68%;
+}
+.hide-image {
+    display: none;  
+}
+
+.active-menu {
+    color: #e74c3c!important;
 }
