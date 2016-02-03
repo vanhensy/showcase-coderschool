@@ -409,7 +409,7 @@ h4 {
     width: 100%;
     text-align: center;
     position: fixed;
-    bottom: 0px;
+    bottom: 15px;
     font-size: 10px;
 }
 .member-block img {

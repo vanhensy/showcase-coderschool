@@ -1,4 +1,10 @@
-var screenHeight = window.innerHeight;
+if (window.innerHeight > 668) {
+     var screenHeight = 668;
+     var footer = document.getElementsByClassName('showcase-footer');
+    footer[0].style.display = 'inline-block';
+} else {
+    var screenHeight = window.innerHeight;
+}
 var boxHeight = (screenHeight - 170) / 2 + "px";
 document.getElementById("showcase").style.backgroundSize = 100 + "%" + " " + (screenHeight - 70) / 2 + "px";
 document.getElementById("center-block").style.minHeight = screenHeight + "px";
@@ -11,6 +17,8 @@ var introTextHeight = (screenHeight - 170) / 2 - 50 + "px";
 $('body').css({
     height: screenHeight + "px"
 });
+
+
 
 function show_demo(appName) {
 
