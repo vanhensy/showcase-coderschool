@@ -540,3 +540,13 @@ a.expand {
 .active-menu {
     color: #e74c3c!important;
 }
+
+#apply-course, #author {
+    animation-delay: 0.15s;
+    animation-duration: 0.8s;
+    
+}
+#app-list, #introduction {
+    animation-delay: 0.05s;
+    animation-duration: 0.8s;
+}
