@@ -1,6 +1,6 @@
 if (window.innerHeight > 668) {
-     var screenHeight = 668;
-     var footer = document.getElementsByClassName('showcase-footer');
+    var screenHeight = 668;
+    var footer = document.getElementsByClassName('showcase-footer');
     footer[0].style.display = 'inline-block';
 } else {
     var screenHeight = window.innerHeight;
@@ -14,9 +14,7 @@ document.getElementById("app-list").style.height = boxHeight;
 document.getElementById("introduction").style.height = boxHeight;
 var boxContentHeight = (screenHeight - 170) / 2 - 20 + "px";
 var introTextHeight = (screenHeight - 170) / 2 - 50 + "px";
-$('body').css({
-    height: screenHeight + "px"
-});
+
 
 
 
@@ -31,11 +29,35 @@ function show_demo(appName) {
     teamArea.innerText = readTextFile(fileName_intro)[2];
     var avatarArea = document.getElementsByClassName('member-avatar');
     var nameArea = document.getElementsByClassName('member-name');
-    for (i=0; i < 3; i++) {
-            avatarArea[i].src = readTextFile(fileName_intro)[i+3];
-            nameArea[i].innerText = readTextFile(fileName_intro)[i+6];
+    for (i = 0; i < 3; i++) {
+        avatarArea[i].src = readTextFile(fileName_intro)[i + 3];
+        nameArea[i].innerText = readTextFile(fileName_intro)[i + 6];
     }
 };
+
+function show_showcase() {
+    var showcase = document.getElementById('showcase');
+    classie.removeClass(showcase, 'hide');
+    var testimonials = document.getElementById('testimonials');
+    classie.addClass(testimonials, 'hide');
+    $('body').css({
+    "height": screenHeight + "px",
+    "background": "none"   
+});
+}
+
+function show_testimonials() {
+    var showcase = document.getElementById('showcase');
+    classie.addClass(showcase, 'hide');
+    var testimonials = document.getElementById('testimonials');
+    classie.removeClass(testimonials, 'hide');
+    $('body').css({
+            "min-height": "500px",
+            "height": "auto",
+            "background": "url(../img/banner-background-testi.jpg) no-repeat 50% 70px",
+            "background-size": "100% 320px"
+    });
+}
 
 function readTextFile(file) {
     var rawFile = new XMLHttpRequest();
@@ -92,3 +114,36 @@ $(document).ready(function () {
             });
     }
 });
+
+
+(function () {
+    var pageWrap = document.getElementById('pagewrap'),
+        pages = [].slice.call(pageWrap.querySelectorAll('div.container')),
+        currentPage = 0,
+        triggerLoading = [].slice.call(pageWrap.querySelectorAll('a.pageload-link')),
+        loader = new SVGLoader(document.getElementById('loader'), {
+            speedIn: 300,
+            easingIn: mina.easeinout
+        });
+
+    function init() {
+        triggerLoading.forEach(function (trigger) {
+            trigger.addEventListener('click', function (ev) {
+                ev.preventDefault();
+                loader.show();
+                // after some time hide loader
+                setTimeout(function () {
+                    loader.hide();
+                    classie.removeClass(pages[currentPage], 'show');
+                    // update..
+                    currentPage = currentPage ? 0 : 1;
+                    classie.addClass(pages[currentPage], 'show');
+
+                }, 2000);
+            });
+        });
+    }
+
+    init();
+
+})();
