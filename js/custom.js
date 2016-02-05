@@ -1,6 +1,7 @@
+
+var footer = document.getElementsByClassName('showcase-footer');
 if (window.innerHeight > 668) {
-    var screenHeight = 668;
-    var footer = document.getElementsByClassName('showcase-footer');
+    var screenHeight = 668; 
     footer[0].style.display = 'inline-block';
 } else {
     var screenHeight = window.innerHeight;
@@ -15,8 +16,9 @@ document.getElementById("introduction").style.height = boxHeight;
 var boxContentHeight = (screenHeight - 170) / 2 - 20 + "px";
 var introTextHeight = (screenHeight - 170) / 2 - 50 + "px";
 
-
-
+var showcase = document.getElementById('showcase');
+var testimonials = document.getElementById('testimonials');
+var home = document.getElementById('home');
 
 function show_demo(appName) {
 
@@ -35,22 +37,35 @@ function show_demo(appName) {
     }
 };
 
-function show_showcase() {
-    var showcase = document.getElementById('showcase');
-    classie.removeClass(showcase, 'hide');
-    var testimonials = document.getElementById('testimonials');
+function show_home() {
+    classie.removeClass(home, 'hide');
     classie.addClass(testimonials, 'hide');
+    classie.addClass(showcase, 'hide');
+    footer[0].style.display = 'none';
+    $('body').css({
+    "overflow-y": "scroll" 
+});
+}
+
+function show_showcase() {
+    
+    classie.removeClass(showcase, 'hide');
+    classie.addClass(testimonials, 'hide');
+    classie.addClass(home, 'hide');
+    footer[0].style.display = "inline-block";
     $('body').css({
     "height": screenHeight + "px",
-    "background": "none"   
+    "background": "none",
+    "overflow": "hidden"
 });
 }
 
 function show_testimonials() {
-    var showcase = document.getElementById('showcase');
+    
     classie.addClass(showcase, 'hide');
-    var testimonials = document.getElementById('testimonials');
     classie.removeClass(testimonials, 'hide');
+    classie.addClass(home,'hide');
+    footer[0].style.display = 'none';
     $('body').css({
             "min-height": "500px",
             "height": "auto",

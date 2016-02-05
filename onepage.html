@@ -14,6 +14,8 @@
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link href="css/masonry.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="js/snap.svg-min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -51,7 +53,7 @@
 
 </head>
 
-<body>
+<body onload="show_home()">
     <div id="pagewrap" class="pagewrap">
         <!-- Fixed navbar -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -64,8 +66,8 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a class="pageload-link" onclick="setTimeout(show_home, 2000)" href="#home">Home</a></li>
+                        <li><a class="pageload-link" href="#about">About Us</a></li>
                         <li><a class="pageload-link" onclick="setTimeout(show_showcase, 2000)" href="#showcase">Showcase</a></li>
                         <li><a class="pageload-link active-menu" onclick="setTimeout(show_testimonials, 2000)" href="#testimonials">Testimonials</a></li>
                         <li class="contact-button">
@@ -76,6 +78,121 @@
                 <!--/.nav-collapse -->
             </div>
         </nav>
+
+
+        <div id="home">
+
+            <!-- Intro Block -->
+            <div class="container-fluid intro no-gutter">
+
+                <!-- Main component for a primary marketing message -->
+                <div class="container text-center">
+                    <img class="coding-man animated slideInDown" src="img/hand.png" />
+                    <h1 class="animated zoomIn">Selective, Challenging, and Free programming classes in Ho Chi Minh City</h1>
+                    <h4>8 week long courses made for experienced engineers</h4>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+            <!-- End Intro Block -->
+            <!-- Class Apply Block -->
+            <div class="container main-body text-center">
+                <div id="principle" class="row">
+                    <h2>OUR TRAINING PRINCIPLES</h2>
+                    <p>Students must pass a rigorous selection process to be admitted to any of 8 week classes. During the classes, engineers submit weekly projects for review and work with other top engineers and designers. The program concludes with a demo day where the top group projects are judged by a panel of notable engineering and startup leaders. Courses will be taught in English.</p>
+                    <div class="col-md-4 principle-box text-center animated zoomIn">
+                        <img src="img/image-1.png" />
+                        <h3>Real World Example</h3>
+                        <p>We'll learn how apps like Facebook, Instagram, and Twitter are built.</p>
+                    </div>
+                    <div class="col-md-4 principle-box text-center animated zoomIn">
+                        <img src="img/image-2.png" />
+                        <h3>Selective Admission</h3>
+                        <p>You'll be learning and working with the best.</p>
+                    </div>
+                    <div class="col-md-4 principle-box text-center animated zoomIn">
+                        <img src="img/image-3.png" />
+                        <h3>Hands On Projects</h3>
+                        <p>You'll build real apps you'll be proud to show to customers and employers.</p>
+                    </div>
+                </div>
+                <div class="seperator"></div>
+                <div id="courses-apply" class="row">
+                    <h2>UPCOMING COURSES</h2>
+                    <h4 style="margin-bottom:50px;">All classes are 8 weeks long and meet twice a week</h4>
+                    <div class="col-md-4">
+                        <div class="card courses-box bordered-box animated slideInLeft">
+                            <h3>Swift Class</h3>
+                            <h4>Starts Mar 7th, Mo/We 19:00-21:00</h4>
+                            <img src="img/icon-swift.png" />
+                            <h6>Build beautiful iOS Apps using UIKit and iOS 9. (Mac required)</h6>
+                            <a href="http://goo.gl/forms/hxrrfSssb8">
+                                <button class="btn btn-danger  btn-small"> <span>Apply for Swift Now</span></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card courses-box bordered-box animated zoomIn">
+                            <h3>Ruby Class</h3>
+                            <h4>Starts Feb 23rd, Tu/Th 19:00-21:00</h4>
+                            <img src="img/icon-ruby-on-rail.png" />
+                            <h6>Learn how to build dynamic web apps using Rails 4.</h6>
+                            <a href="http://goo.gl/forms/AcqUcOkHAJ">
+                                <button class="btn btn-danger  btn-small"> Apply for Ruby Now</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card courses-box bordered-box animated slideInRight">
+                            <h3>Android Class</h3>
+                            <h4>Starts on 8th Mar, Tu/Th 19:00-21:00</h4>
+                            <img src="img/icon-android.png" />
+                            <h6> NEW COURSE: Learn to build apps in the world's most popular mobile OS.</h6>
+                            <button class="btn btn-danger  btn-small  "> Apply for Android Now</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Class Apply Block -->
+            <div class="container seperator"></div>
+            <!-- Why Free Block -->
+            <div class="container-fluid why-free text-center">
+                <h2 style="text-transform:uppercase;line-height:22pt;"> Why Do We Make Classes </br>
+	Worth Thousands of Dollars Free?</h2>
+                <div class="col-md-2"></div>
+                <div class="col-md-7 why-free-content">
+                    <p>We offer classes for free to attract the best talent possible. We believe this is the best way to build a better engineer ecosystem in Ho Chi Minh City.</p>
+                    <p><strong>coderschool.vn</strong> classes are funded exclusively through sponsorship by top-notch engineering companies and internal company trainings.<strong> We will never charge individual students. </strong>
+                    </p>
+                </div>
+            </div>
+            <!-- End Why Free Block -->
+            <!-- Footer -->
+            <div class="container-fluid footer text-center">
+                <div class="contact-holder">
+                    <a href="#">
+                        <div class="contact-button">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 social">
+                    <a href="">
+                        <img src="img/twitter.png" />
+                    </a>
+                    <a href="">
+                        <img src="img/facebook.png" />
+                    </a>
+                    <a href="">
+                        <img src="img/youtube.png" />
+                    </a>
+                </div>
+                <br/>
+                <h6>Coderschool.vn © 2015, Create with Love and Redbull </h6>
+            </div>
+        </div>
+
         <div id="showcase" class="container-fluid showcase hide">
             <div class="container no-side-padding">
                 <div id="left-block" class="col-md-4 no-side-padding">
@@ -224,17 +341,31 @@
                     <img class="animated slideInLeft" src="img/Charles-icon.png" />
                 </div>
                 <!-- End Intro Banner-->
-                <div class="grid">
+                <div id="grid" class="grid effect-2">
+
+                    <p>Just 6 weeks from nothing to my awesome Final Project. Very love it ! Tired because hard working but after that very excitement with what I can do. </p>
+                    <p>People are very friendly. Mr. Charles is very supportive, responsive and helpful. </p>
+                    <p>This class is completely different with the class I learned. I learned with talented engineers, teachers are enthusiastic and extremely jovial. This course is extremely interesting. Thank you everyone, especially Charles Lee </p>
+                    <p>To me, the course is quite tough. But i really love the way how it is organised. Just keep doing things guided from course materials, anyone can master skills. I really appreciate what teacher has done to guide us. </p>
+                    <p>Just one word, "Amazing". I've not just learnt about swift with iOS, but also improved my networking. Know more and sharing more. </p>
+                    <p>I'm changing from develop on Hybrid app to Native app ;-) </p>
+                    <p>Teaching us for free, even give us free food. Always open hand to help us when we have problems. You are amazing, awesome, fantastic. Why? Before going to this class, I have an app published to AppStore but everything I do is just try to finish through tutorials. Coderschool gives me the right path, correct me when I am wrong. And now, I am grateful. I am happy what I have done when joining the class. Thank you, teachers.</p>
+                    <p>It's totally wonderful. I feel like going back to college time again where I can meet passionate people and learn new cool things. I really enjoy the courses which are updated and closely to the real world. :) </p>
+                    <p>I learned new technology of Apple. Coderschool team is professional in management student, management homework. And take care all student enthusiastically </p>
+                    <p>This was a very great class and very helpful than expected. I got the knowledge I needed to further myself and help me in the future. The assignments were not really difficult but they required me to spend too much time on them to have great apps. But I have gained enormous amount of experience. Especially, Sáng is such a great teacher ^^ </p>
+                    <p>Great experience overall. The class went with its spirit of being (very) intensive. Students have chance and are forced to speed up the learning curve with right direction thru the lecture/lab. Students need to have commitment, disciplinary for self-learning/research to really digest the lecture and to survive throughout the course. That's the great experience. I'm not sure but I haven't seen this training method in VN. </p>
+                    <p>Coderschool team is really enthusiastic and helpful. Lectures and class exercises are easy to read and to follow. </p>
+                    <p>I love the way coderschool is operating, based on knowledge sharing but not teaching</p>
 
                 </div>
                 <!-- Page loader-->
 
             </div>
         </div>
-        
-         <div style="display:none;" class="container-fluid showcase-footer">
-        <p>Coderschool.vn © 2015, Created with love and redbull by TeachMe team</p>
-    </div>
+
+        <div style="display:none;" class="container-fluid showcase-footer">
+            <p>Coderschool.vn © 2015, Created with love and redbull by TeachMe team</p>
+        </div>
 
         <div id="loader" class="pageload-overlay" data-opening="M 40 -21.875 C 11.356078 -21.875 -11.875 1.3560784 -11.875 30 C -11.875 58.643922 11.356078 81.875 40 81.875 C 68.643922 81.875 91.875 58.643922 91.875 30 C 91.875 1.3560784 68.643922 -21.875 40 -21.875 Z">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="xMidYMid slice">
@@ -246,6 +377,19 @@
     <!--Page wrap for pre-loading-->
     <script src="js/classie.js"></script>
     <script src="js/svgLoader.js"></script>
+
+    <!-- Script Implement for Masonry Effect-->
+    <script src="http://tympanus.net/Development/GridLoadingEffects/js/masonry.pkgd.min.js"></script>
+    <script src="http://tympanus.net/Development/GridLoadingEffects/js/imagesloaded.js"></script>
+    <script src="http://tympanus.net/Development/GridLoadingEffects/js/classie.js"></script>
+    <script src="http://tympanus.net/Development/GridLoadingEffects/js/AnimOnScroll.js"></script>
+    <script>
+        new AnimOnScroll(document.getElementById('grid'), {
+            minDuration: 0.4,
+            maxDuration: 0.7,
+            viewportFactor: 0.2
+        });
+    </script>
     <!--Script Implement-->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.slimscroll.min.js"></script>
