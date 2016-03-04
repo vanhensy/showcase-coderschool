@@ -29,6 +29,7 @@
                 height: 199
             });
         });
+
         this.on('update', function() {
            $('#right-block').removeClass('animated slideInRight');
         });
@@ -36,4 +37,5 @@
             $('#right-block').addClass('animated slideInRight');
         });
     </script>
+    
 </app-details>

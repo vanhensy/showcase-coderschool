@@ -29,7 +29,6 @@
                 }
                 self.update({items: data.apps});
             });
-
         };
 
         this.on('mount', function() {
@@ -47,16 +46,17 @@
                 this.gifImage.removeClass('animated zoomIn');
             }
         });
+
         this.on('updated', function() {
             if(this.gifImage) {
                 this.gifImage.addClass('animated zoomIn');
             }
-        })
+        });
 
     </script>
 
-
 </app-box>
+
 
 <app-icon>
     <div class="col-md-4 app-icon text-center">
